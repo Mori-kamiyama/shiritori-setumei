@@ -1,0 +1,93 @@
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-background);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.imageWrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 363px;
+    display: flex;
+    justify-content: center;
+}
+
+.styledButton {
+    padding: 15px;
+    background-color: #23a5ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.styledButton:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .imageContainer {
+        flex-direction: row;
+        max-width: 746px;
+    }
+
+    .buttonContainer {
+        flex-direction: row;
+        max-width: 746px;
+    }
+
+    .styledButton {
+        width: auto;
+    }
+
+    .imageWrapper {
+        max-width: 250px; /* Increase the size of images on larger screens */
+    }
+}

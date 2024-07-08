@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    background-color: var(--card-background);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+}
+
+.title {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.styledButton {
+    padding: 15px 30px;
+    background-color: #23a5ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 200px;
+}
+
+.styledButton:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}

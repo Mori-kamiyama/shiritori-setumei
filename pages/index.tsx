@@ -1,13 +1,22 @@
-import Link from "next/link";
-import Layout from "../components/Layout";
+import Link from 'next/link';
+import styles from './home.module.css';
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">About</Link>
-    </p>
-  </Layout>
-);
+const Home = () => {
+    return (
+        <div className={styles.container}>
+            <div className={styles.content}>
+                <h1 className={styles.title}>説明しりとり</h1>
+                <div className={styles.buttonContainer}>
+                    <Link href="/game" legacyBehavior>
+                        <button className={styles.styledButton}>ゲームスタート</button>
+                    </Link>
+                    <Link href="/about" legacyBehavior>
+                        <button className={styles.styledButton}>ルール説明</button>
+                    </Link>
+                </div>
+            </div>
+        </div>
+    );
+};
 
-export default IndexPage;
+export default Home;
